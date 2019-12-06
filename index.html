@@ -10,18 +10,36 @@
 </head>
 
 <body>
-  <header>
+  <section class="welcome-section" id="welcome-section">
+    <button class="close-modal" id="close-modal-x">X</button>
+    <div class="modal-content">
+      <h1 class="welcome-heading">Welcome to my profile page</h1>
+      <p>Here is Bruno talking to you.</p>
+      <p>Fell free to contact me via social media, anytime!</p>
+      <p>Click <button class="close-modal-here" id="close-modal-here">here</button> to close this screen</p>
+      <p>Or wait <span id="count-down"></span></p>
+    </div>
+  </section>
+  <nav class="main-header" id="navbar">
     <div class="container branding">
       <section class="width-limiter image">
-        <img src="./assets/imgs/user_placeholder2.png" alt="" />
+        <img class="profile-pic" src="./assets/imgs/selfie.jpeg" alt="" />
         <h1>Bruno de Moraes</h1>
       </section>
     </div>
-    <div class="container nav-bar">
-      <nav class="width-limiter menu" id="nav-bar">
-        <ul class="nav-menu">
+    <div class="container nav-bar" >
+      <button id="menu-toggler">
+        <div class="menu-strip"></div>
+        <div class="menu-strip"></div>
+        <div class="menu-strip"></div>
+      </button>
+      <div class="width-limiter menu" >
+        <ul class="nav-menu hide" id="nav-menu">
           <li class="nav-item">
             <a href="#about_me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects">Projects</a>
           </li>
           <li class="nav-item">
             <a href="#around_the_world">Around the World</a>
@@ -36,44 +54,157 @@
             <a href="#contact_me">Contact me</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
   <main>
     <div class="main-container">
       <section class="main-content even">
         <a class="anchor-normalizer" href="#" id="about_me"></a>
-        <div class="text-content"></div>
+        <div class="text-content">
+          <h1 class="heading-controller">About me</h1>
+          <div class="content">
+
+            <p>My formation in IT was made with 2 years of academic and 3 years of total dedication and focus on
+              Javascript technology research with some online courses, online research and some good professional I met
+              on my way.</p>
+            <p>I am centered in mastering JS technology and I am starting to take iOs path as my platform mobile
+              language and C++ for lower level and root programming language.</p>
+            <p>In some years I intent to start a bachelor degree in Electronic Engineering to understand better how to
+              build hardware systems and improve our society with new technologies.</p>
+            <p>In my spare time I study and when in between projects I donate my time to a project to build a school,
+              which the first part is done and mentor people who wants to learn programming.</p>
+          </div>
+        </div>
         <div class="image-content"></div>
       </section>
       <section class="main-content odd">
+        <a class="anchor-normalizer" href="#" id="projects_id"></a>
+        <section class="text-content projects" id="projects">
+          <h1 class="heading-controller">My projects on github</h1>
+          <div class="content project-tile">
+            <ul class="project-tile" id="repos">
+              <li class="project-tile repo">
+                <img style="margin-right: 10px;" src="assets/icons/folder.png" />
+                <a href="https://github.com/brunoslash76/centauro" style="color: white">
+                  <span>Centauro</span>
+                  <span>2018-11-08T01:16:04Z</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <section class="main-content even">
         <a class="anchor-normalizer" href="#" id="around_the_world"></a>
-        <div class="text-content"></div>
+        <div class="text-content">
+          <h1 class="heading-controller">Around the world</h1>
+          <div class="content around-the-world">
+            <div class="flick-container">
+              <a data-flickr-embed="true" data-header="true" data-footer="true"
+                href="https://www.flickr.com/photos/atmosfearexperience/albums/72157629144434575"
+                title="Kerala, Southern India ">
+                <img src="https://live.staticflickr.com/6122/5932147540_b63c778e97.jpg" width="100%" height="auto"
+                  alt="Kerala, Southern India ">
+              </a>
+              <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+            </div>
+            <div class="about-trip">
+              <p>I traveled to India in 2011 to take an intership program thru AIESEC and had the opportunit to exchange
+                knowledge with many culture.</p>
+              <p>An also had the opportunity to meet this great landscapes and awesome people.</p>
+              <p>Check the full album in my
+                <a class="flickr"
+                  href="https://www.flickr.com/photos/atmosfearexperience/5932147540/in/album-72157629144434575/"
+                  target="_blank">FLICKR</a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="image-content"></div>
+      </section>
+      <section class="main-content odd">
+        <a class="anchor-normalizer" href="#" id="programming"></a>
+        <div class="text-content">
+          <h1 class="heading-controller">Programming</h1>
+          <div class="content">
+            <p>I have 4 years experience in front-end development hands on <strong>Javascript</strong> technology.
+              React, Angular 1,
+              Angular 2+, NodeJS.</p>
+            <p>I had the opportunity to start a great project for a client of <strong>Evolution IT</strong> consultancy,
+              with <strong>React</strong>,
+              which gave me a solid experience of this technology and to architect the whole SASS and React folder
+              structure using Redux as state manager.</p>
+            <p>In another opportunity I worked as full stack JS developer using Angular 5, <strong>NodeJs</strong> and
+              MySQL to create a
+              payment platform.</p>
+            <p>I had few experiences with startups and this dynamic world which constant challenges and moving fast
+              changes. </p>
+            <p>I have my own side projects with a team of UX and I am digging this path of UX Design and Design Thinking
+              to improve my skills as solution developer and entrepreneur.</p>
+            <p>And we just had our first experience trying to validate a contractor's idea, and in the end after user
+              research we invalidate the project having in hands thats users didn't want to use that idea. </p>
+          </div>
+        </div>
         <div class="image-content"></div>
       </section>
       <section class="main-content even">
-        <a class="anchor-normalizer" href="#" id="programming"></a>
-        <div class="text-content"></div>
+        <a class="anchor-normalizer" href="#" id="volunteer"></a>
+
+        <div class="text-content">
+          <h1 class="heading-controller">Volunteer</h1>
+          <div class="content">
+            <p>I had the opportunity to be part of a project which contemplates to construct a school for the community
+              in 2017. I was responsible for helping the masons to clean and cary heavy materials.</p>
+            <p>Also I have a mentorship program to help who wants to start to learn programming. One of my students
+              alreayd found a position in a medium size company in Brazil.</p>
+
+
+          </div>
+        </div>
         <div class="image-content"></div>
       </section>
       <section class="main-content odd">
-        <a class="anchor-normalizer" href="#" id="volunteer"></a>
-
-        <div class="text-content"></div>
-        <div class="image-content"></div>
-      </section>
-      <section class="main-content even" >
         <a class="anchor-normalizer" href="#" id="contact_me"></a>
-        <div class="text-content"></div>
+        <div class="text-content">
+          <h1 class="heading-controller">Contact me</h1>
+          <div class="content">
+            <div>
+              <p>Check my social network for more info and pics, and feel free to contact me there!</p>
+            </div>
+            <ul class="social-media-list">
+              <li class="social-media-list-item">
+                <a href="https://www.linkedin.com/in/bruno-demoraes-russo/" target="_blank">
+                  <img class="social-media" src="./assets/icons/linkedin.png" alt="Logo linkedin">
+                </a>
+              </li>
+              <li class="social-media-list-item">
+                <a href="https://github.com/brunoslash76" target="_blank" id="profile-link">
+                  <img class="social-media" src="./assets/icons/github.png" alt="Logo github">
+                </a>
+              </li>
+              <li class="social-media-list-item">
+                <a href="https://bitbucket.org/%7Ba0356230-77b2-4b12-b072-3c581d36e6b4%7D/" target="_blank">
+                  <img class="social-media" src="./assets/icons/bitbucket.png" alt="Logo bitbucket">
+                </a>
+              </li>
+              <li class="social-media-list-item">
+                <a href="https://www.instagram.com/brunoslash76/" target="_blank">
+                  <img class="social-media" src="./assets/icons/instagram.png" alt="Logo instagram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="image-content"></div>
       </section>
+
     </div>
   </main>
-  <footer>
-    <div class="container"></div>
-  </footer>
 
   <script src="index.js"></script>
+  <script src="apirequest.js"></script>
 </body>
 
 </html>
